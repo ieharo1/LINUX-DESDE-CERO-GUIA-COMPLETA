@@ -1,4 +1,4 @@
-# Linux desde cero - Demo01
+# Linux desde cero
 
 Curso interactivo para aprender Linux desde cero con comandos reales y terminal simulada.
 
