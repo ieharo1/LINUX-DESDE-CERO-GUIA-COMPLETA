@@ -113,3 +113,4 @@ Un curso interactivo completo para comprender Linux desde cero con practica inme
 ---
 
 © 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.
+
