@@ -1,486 +1,378 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Linux desde cero - Demo01</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script defer src="js/app.js"></script>
-  </head>
-  <body>
-    <div class="layout">
-      <aside class="sidebar">
-        <div class="brand">
-          <span class="dot"></span>
-          <div>
-            <h1>Linux desde cero</h1>
-            <p>Guia interactiva</p>
-          </div>
-        </div>
-        <nav>
-          <a href="#intro">Introduccion</a>
-          <a href="#instalacion">Instalacion</a>
-          <a href="#comandos">Comandos basicos</a>
-          <a href="#filesystem">Sistema de archivos</a>
-          <a href="#permisos">Permisos</a>
-          <a href="#procesos">Procesos</a>
-          <a href="#redes">Redes</a>
-          <a href="#usuarios">Usuarios</a>
-          <a href="#terminal">Terminal</a>
-          <a href="#scripts">Scripts bash</a>
-          <a href="#docs">Documentacion</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐧 Linux Desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">🐧 Linux Desde Cero</a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">🏠 Inicio</a></li>
+                    <li><a href="#que-es">📖 ¿Qué es?</a></li>
+                    <li><a href="#temas">📚 Temas</a></li>
+                    <li><a href="#ejemplos">💻 Ejemplos</a></li>
+                    <li><a href="#contacto">👨‍💻 Contacto</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="side-note">
-          <p>Tip: usa el buscador para filtrar comandos y ver ejemplos reales.</p>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>🐧 Linux Desde Cero</h1>
+                <p class="hero-subtitle">Guía completa para aprender Linux desde fundamentos hasta administración avanzada.</p>
+                <div class="hero-buttons">
+                    <a href="#temas" class="btn btn-primary">Comenzar Curso</a>
+                    <a href="#ejemplos" class="btn btn-secondary">Ver Ejemplos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="temas" class="topics">
+            <div class="container">
+                <h2>📖 Temas del Curso</h2>
+                <p class="topics-intro">Haz clic en cualquier tema para ver el contenido detallado</p>
+                
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">📌</span>
+                            <h3>Módulo 1: Fundamentos</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema1-1">Introducción a Linux</a></li>
+                            <li><a href="#tema1-2">Instalación</a></li>
+                            <li><a href="#tema1-3">Comandos Básicos</a></li>
+                            <li><a href="#tema1-4">Gestión de Archivos</a></li>
+                        </ul>
+                        <a href="#tema1-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">⚙️</span>
+                            <h3>Módulo 2: Intermedio</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema2-1">Gestión del Sistema</a></li>
+                            <li><a href="#tema2-2">Redes y Seguridad</a></li>
+                            <li><a href="#tema2-3">Usuarios y Permisos</a></li>
+                            <li><a href="#tema2-4">Paquetes y Software</a></li>
+                        </ul>
+                        <a href="#tema2-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">🚀</span>
+                            <h3>Módulo 3: Avanzado</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema3-1">Servidores</a></li>
+                            <li><a href="#tema3-2">Scripting</a></li>
+                            <li><a href="#tema3-3">Administración Avanzada</a></li>
+                            <li><a href="#tema3-4">Optimización y Mantenimiento</a></li>
+                        </ul>
+                        <a href="#tema3-1" class="btn-topic">Ver tema →</a>
+                    </div>
+                </div>
+
+                <div class="topic-content">
+                    <div class="content-detail" id="tema1-1">
+                        <h3>📌 Introducción a Linux</h3>
+                        <div class="content-body">
+                            <p><strong>Linux</strong> es un sistema operativo de código abierto basado en Unix, creado por Linus Torvalds en 1991.</p>
+                            <h4>Historia:</h4>
+                            <ul>
+                                <li>1991: Linus Torvalds crea el kernel Linux</li>
+                                <li>1992: Primera versión pública bajo licencia GPL</li>
+                                <li>2000s: Linux domina servidores y dispositivos móviles</li>
+                                <li>Hoy: Powers el 90% de servidores web del mundo</li>
+                            </ul>
+                            <h4>Distribuciones Populares:</h4>
+                            <ul>
+                                <li>🟠 Ubuntu - Ideal para principiantes</li>
+                                <li>🔴 Fedora - Orientada a desarrolladores</li>
+                                <li>🟡 Debian - Estabilidad y libertad</li>
+                                <li>🔵 Arch - Máxima personalización</li>
+                            </ul>
+                            <div class="info-box">
+                                <strong>💡 ¿Sabías qué?</strong>
+                                <p>Android está basado en el kernel de Linux. Tu teléfono usa Linux sin saberlo.</p>
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema1-2">
+                        <h3>⚙️ Instalación de Linux</h3>
+                        <div class="content-body">
+                            <h4>Opciones de Instalación:</h4>
+                            <ol>
+                                <li><strong>Máquina Virtual (VirtualBox/VMware)</strong> - Prueba sin modificar tu sistema</li>
+                                <li><strong>WSL (Windows Subsystem for Linux)</strong> - Linux dentro de Windows</li>
+                                <li><strong>Dual Boot</strong> - Arrancar con Windows o Linux</li>
+                                <li><strong>Instalación directa</strong> - Reemplazar el SO actual</li>
+                            </ol>
+                            <h4>Instalar Ubuntu:</h4>
+                            <pre><code># Descargar ISO desde ubuntu.com
+# Crear USB booteable con Rufus o Etcher
+# Arrancar desde USB y seguir el asistente</code></pre>
+                            <h4>WSL en Windows:</h4>
+                            <pre><code>wsl --install -d Ubuntu
+# Reiniciar y crear usuario</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema1-3">
+                        <h3>📦 Comandos Básicos</h3>
+                        <div class="content-body">
+                            <h4>Navegación:</h4>
+                            <pre><code>ls              # Listar archivos
+cd carpeta      # Cambiar directorio
+pwd             # Mostrar directorio actual
+mkdir nom       # Crear directorio</code></pre>
+                            <h4>Archivos:</h4>
+                            <pre><code>cp origen dest  # Copiar
+mv origen dest  # Mover/renombrar
+rm archivo      # Eliminar
+cat archivo     # Ver contenido</code></pre>
+                            <h4>Permisos:</h4>
+                            <pre><code>chmod 755 archivo    # Cambiar permisos
+chown user:group archivo  # Cambiar propietario</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema2-1">
+                        <h3>💻 Gestión del Sistema</h3>
+                        <div class="content-body">
+                            <h4>Usuarios:</h4>
+                            <pre><code>sudo adduser nombre      # Crear usuario
+sudo deluser nombre      # Eliminar usuario
+su - usuario            # Cambiar de usuario</code></pre>
+                            <h4>Procesos:</h4>
+                            <pre><code>ps aux                 # Ver procesos
+top                    # Monitor en tiempo real
+kill PID               # Terminar proceso</code></pre>
+                            <h4>Paquetes (Ubuntu/Debian):</h4>
+                            <pre><code>sudo apt update         # Actualizar lista
+sudo apt upgrade        # Actualizar paquetes
+sudo apt install nombre # Instalar paquete</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema2-2">
+                        <h3>✅ Redes y Seguridad</h3>
+                        <div class="content-body">
+                            <h4>Configuración de Red:</h4>
+                            <pre><code>ip addr                # Ver IPs
+ping google.com         # Probar conexión
+curl ifconfig.me        # Ver IP pública</code></pre>
+                            <h4>Firewall (ufw):</h4>
+                            <pre><code>sudo ufw enable        # Activar firewall
+sudo ufw allow 80       # Permitir puerto 80
+sudo ufw status         # Ver estado</code></pre>
+                            <h4>SSH:</h4>
+                            <pre><code>ssh usuario@servidor    # Conectar
+ssh -p 2222 usuario@IP  # Puerto personalizado</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema3-1">
+                        <h3>🚀 Servidores</h3>
+                        <div class="content-body">
+                            <h4>Apache:</h4>
+                            <pre><code>sudo apt install apache2
+sudo systemctl start apache2</code></pre>
+                            <h4>Nginx:</h4>
+                            <pre><code>sudo apt install nginx
+sudo systemctl start nginx</code></pre>
+                            <h4>Docker:</h4>
+                            <pre><code>curl -fsSL https://get.docker.com | sh
+sudo docker run -d -p 80:80 nginx</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema3-2">
+                        <h3>📋 Scripting Bash</h3>
+                        <div class="content-body">
+                            <p>Los scripts de Bash permiten automatizar tareas repetitivas en Linux.</p>
+                            <h4>Ejemplo de Script:</h4>
+                            <pre><code>#!/bin/bash
+echo "Iniciando backup..."
+tar -czf backup.tar.gz /home/usuario
+echo "Backup completado"</code></pre>
+                            <h4>Tareas Programadas (cron):</h4>
+                            <pre><code>crontab -e
+# Cada día a las 2am
+0 2 * * * /home/scripts/backup.sh</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema1-4">
+                        <h3>📁 Gestión de Archivos y Directorios</h3>
+                        <div class="content-body">
+                            <h4>Búsqueda de Archivos:</h4>
+                            <pre><code>find /home -name "*.txt"       # Buscar por nombre
+find / -type f -size +100M   # Archivos mayores a 100MB
+locate archivo               # Búsqueda rápida</code></pre>
+                            <h4>Compresores:</h4>
+                            <pre><code>tar -czf archivo.tar.gz /carpeta  # Comprimir
+tar -xzf archivo.tar.gz       # Descomprimir
+zip -r archivo.zip carpeta     # Zip
+unzip archivo.zip              # Descomprimir zip</code></pre>
+                            <h4>Enlaces:</h4>
+                            <pre><code>ln -s archivo enlace_simbolico   # Enlace simbólico
+ln archivo enlace_duro         # Enlace duro</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema2-3">
+                        <h3>⚡ Procesos y Servicios</h3>
+                        <div class="content-body">
+                            <h4>Gestión de Procesos:</h4>
+                            <pre><code>ps aux | grep nginx           # Buscar proceso
+kill -9 PID                    # Matar proceso
+pkill -f nombre               # Matar por nombre
+nice -n 10 comando            # Prioridad</code></pre>
+                            <h4>Systemd (Servicios):</h4>
+                            <pre><code>systemctl status nginx        # Estado
+systemctl start nginx         # Iniciar
+systemctl enable nginx        # Habilitar al arranque
+systemctl restart nginx       # Reiniciar</code></pre>
+                            <h4>Crontab:</h4>
+                            <pre><code>crontab -e                   # Editar
+# Formato: minuto hora día mes día_semana comando
+0 2 * * * /scripts/backup.sh  # Diario a las 2am</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema2-4">
+                        <h3>📊 Monitorización y Logs</h3>
+                        <div class="content-body">
+                            <h4>Monitorización:</h4>
+                            <pre><code>htop                    # Monitor interactivo
+iotop                    # E/S de disco
+nethogs                 # Ancho de banda por proceso
+dmesg                   # Mensajes del kernel</code></pre>
+                            <h4>Logs del Sistema:</h4>
+                            <pre><code>tail -f /var/log/syslog     # Ver logs en tiempo real
+journalctl -xe           # Logs de systemd
+cat /var/log/auth.log    # Intentos de login</code></pre>
+                            <h4>Espacio en Disco:</h4>
+                            <pre><code>df -h                     # Uso de disco
+du -sh /home/*           # Tamaño de carpetas
+ncdu                     # Navegador de disco interactivo</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema3-3">
+                        <h3>🐳 Docker y Contenedores</h3>
+                        <div class="content-body">
+                            <h4>Imágenes y Contenedores:</h4>
+                            <pre><code>docker images              # Ver imágenes
+docker ps                  # Contenedores activos
+docker run -d -p 80:80 nginx  # Crear contenedor
+docker exec -it contenedor bash  # Entrar</code></pre>
+                            <h4>Docker Compose:</h4>
+                            <pre><code>docker-compose up -d       # Iniciar servicios
+docker-compose down        # Detener
+docker-compose logs -f     # Ver logs</code></pre>
+                            <h4>Dockerfile:</h4>
+                            <pre><code>FROM node:18
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD ["npm", "start"]</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    
+                    <div class="content-detail" id="tema3-4">
+                        <h3>🔒 Seguridad Avanzada</h3>
+                        <div class="content-body">
+                            <h4>Gestión de Permisos:</h4>
+                            <pre><code>chmod 755 archivo          # Permisos rwx r-x r-x
+chmod +x script.sh        # Ejecutable
+chattr +i archivo          # Inmutable
+lsattr archivo             # Ver atributos</code></pre>
+                            <h4>Usuarios y Grupos:</h4>
+                            <pre><code>groupadd desarrolladores   # Crear grupo
+usermod -aG sudo usuario   # Agregar a grupo
+visudo                     # Editar sudoers</code></pre>
+                            <h4> SELinux/AppArmor:</h4>
+                            <pre><code>getenforce                # Ver estado
+setenforce 0              # Desactivar temporalmente
+sestatus                  # Estado completo</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos" class="section section-alt">
+            <div class="container">
+                <h2>💻 Ejemplos de Comandos</h2>
+                <div class="examples-grid">
+                    <div class="example-card">
+                        <h4>📁 Archivos</h4>
+                        <pre><code>ls -la
+touch archivo.txt
+cat archivo.txt</code></pre>
+                    </div>
+                    <div class="example-card">
+                        <h4>🔧 Sistema</h4>
+                        <pre><code>uname -a
+df -h
+free -h</code></pre>
+                    </div>
+                    <div class="example-card">
+                        <h4>🌐 Red</h4>
+                        <pre><code>ifconfig
+netstat -tuln
+ss -tuln</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</h2>
+                <p class="contact-title">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>📱 WhatsApp: 098805517</p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                    <p>🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">ieharo1.github.io/portafolio-isaac.haro/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
         </div>
-      </aside>
+    </footer>
 
-      <main class="content">
-        <header class="hero">
-          <div>
-            <h2>Aprende Linux desde cero con ejemplos reales</h2>
-            <p>
-              Curso interactivo con comandos, simulador de terminal y ejercicios
-              guiados. Abre este sitio con index.html y practica de inmediato.
-            </p>
-            <div class="hero-actions">
-              <a class="primary" href="#comandos">Ver comandos</a>
-              <a class="ghost" href="#terminal">Ir a terminal</a>
-            </div>
-          </div>
-          <div class="hero-card">
-            <p class="label">Ruta rapida</p>
-            <h3>Primer comando</h3>
-            <code>$ pwd</code>
-            <p>Muestra tu directorio actual.</p>
-          </div>
-        </header>
-
-        <section class="search">
-          <input id="search" type="search" placeholder="Buscar comando o tema..." />
-          <span class="hint">Ejemplo: chmod, redes, usuarios</span>
-        </section>
-
-        <section id="intro" class="panel">
-          <h3>1. Introduccion a Linux</h3>
-          <div class="grid two">
-            <article class="card">
-              <h4>Que es Linux</h4>
-              <p>
-                Linux es un kernel y un ecosistema de distribuciones que
-                permiten construir sistemas seguros, estables y abiertos.
-              </p>
-            </article>
-            <article class="card">
-              <h4>Distribuciones populares</h4>
-              <ul>
-                <li>Ubuntu y Linux Mint para escritorio</li>
-                <li>Debian y Fedora para entornos estables</li>
-                <li>Arch y Manjaro para usuarios avanzados</li>
-              </ul>
-            </article>
-            <article class="card">
-              <h4>Filosofia Unix</h4>
-              <p>
-                Herramientas pequenas, combinables y con salida de texto para
-                resolver tareas complejas usando pipelines.
-              </p>
-            </article>
-            <article class="card">
-              <h4>Por que aprender Linux</h4>
-              <p>
-                Es clave en servidores, DevOps, cloud, ciberseguridad y
-                desarrollo moderno.
-              </p>
-            </article>
-          </div>
-        </section>
-
-        <section id="instalacion" class="panel">
-          <h3>2. Instalacion</h3>
-          <div class="grid three">
-            <article class="card">
-              <h4>Linux en VM</h4>
-              <p>Ideal para practicar sin afectar tu equipo principal.</p>
-              <code>VirtualBox / VMware</code>
-            </article>
-            <article class="card">
-              <h4>Dual boot</h4>
-              <p>Instala junto a Windows para elegir al iniciar.</p>
-              <code>Particion + GRUB</code>
-            </article>
-            <article class="card">
-              <h4>Linux en servidor</h4>
-              <p>Imagen minima, acceso por SSH y actualizaciones seguras.</p>
-              <code>Ubuntu Server / Debian</code>
-            </article>
-          </div>
-        </section>
-
-        <section id="comandos" class="panel">
-          <div class="panel-header">
-            <h3>3. Comandos basicos</h3>
-            <p>Haz clic en Ejecutar para ver la simulacion en la terminal.</p>
-          </div>
-          <div class="grid four command-grid">
-            <article
-              class="card command-card"
-              data-command="pwd"
-              data-output="Ruta actual\\n/home/estudiante"
-              data-tags="ruta directorio"
-            >
-              <h4>pwd</h4>
-              <p>Imprime el directorio actual.</p>
-              <code>$ pwd</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ pwd">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="ls"
-              data-output="Listando\\nDocumentos  Descargas  proyectos"
-              data-tags="listar archivos"
-            >
-              <h4>ls</h4>
-              <p>Lista archivos y carpetas.</p>
-              <code>$ ls</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ ls -la">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="cd"
-              data-output="Cambiando directorio\\n/home/estudiante/proyectos"
-              data-tags="navegar"
-            >
-              <h4>cd</h4>
-              <p>Cambia de directorio.</p>
-              <code>$ cd proyectos</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ cd /var/log">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="mkdir"
-              data-output="Creando carpeta\\nmkdir proyectos_demo"
-              data-tags="carpeta"
-            >
-              <h4>mkdir</h4>
-              <p>Crea directorios.</p>
-              <code>$ mkdir nueva_carpeta</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ mkdir -p backup/logs">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="rm"
-              data-output="Eliminando\\nrm archivo.txt"
-              data-tags="eliminar"
-            >
-              <h4>rm</h4>
-              <p>Elimina archivos o carpetas.</p>
-              <code>$ rm archivo.txt</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ rm -rf carpeta">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="cp"
-              data-output="Copiando\\ncp origen destino"
-              data-tags="copiar"
-            >
-              <h4>cp</h4>
-              <p>Copia archivos y carpetas.</p>
-              <code>$ cp archivo.txt copia.txt</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ cp -r carpeta backup/">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="mv"
-              data-output="Moviendo\\nmv archivo.txt /tmp"
-              data-tags="mover renombrar"
-            >
-              <h4>mv</h4>
-              <p>Mueve o renombra archivos.</p>
-              <code>$ mv viejo.txt nuevo.txt</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ mv carpeta /tmp/">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="touch"
-              data-output="Creando archivo\\ntouch notas.txt"
-              data-tags="crear"
-            >
-              <h4>touch</h4>
-              <p>Crea archivos vacios o actualiza fecha.</p>
-              <code>$ touch notas.txt</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ touch app.log">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="cat"
-              data-output="Mostrando contenido\\ncat archivo.txt"
-              data-tags="leer"
-            >
-              <h4>cat</h4>
-              <p>Muestra contenido de archivos.</p>
-              <code>$ cat archivo.txt</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ cat /etc/os-release">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="nano"
-              data-output="Editor nano\\nCtrl+O guarda, Ctrl+X sale"
-              data-tags="editor"
-            >
-              <h4>nano</h4>
-              <p>Editor de texto en terminal.</p>
-              <code>$ nano archivo.txt</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ nano notas.txt">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="clear"
-              data-output="Terminal limpia"
-              data-tags="limpiar"
-            >
-              <h4>clear</h4>
-              <p>Limpia la terminal.</p>
-              <code>$ clear</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ clear">Copiar</button>
-              </div>
-            </article>
-            <article
-              class="card command-card"
-              data-command="history"
-              data-output="Historial de comandos\\n1 ls\\n2 cd proyectos\\n3 pwd"
-              data-tags="historial"
-            >
-              <h4>history</h4>
-              <p>Muestra el historial de comandos.</p>
-              <code>$ history</code>
-              <div class="actions">
-                <button class="run-btn">Ejecutar</button>
-                <button class="copy-btn" data-copy="$ history | tail">Copiar</button>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="filesystem" class="panel">
-          <h3>4. Sistema de archivos</h3>
-          <div class="grid three">
-            <article class="card">
-              <h4>/</h4>
-              <p>Raiz del sistema, todo parte de aqui.</p>
-            </article>
-            <article class="card">
-              <h4>/home</h4>
-              <p>Carpetas de usuarios y documentos personales.</p>
-            </article>
-            <article class="card">
-              <h4>/etc</h4>
-              <p>Configuraciones del sistema y servicios.</p>
-            </article>
-            <article class="card">
-              <h4>/var</h4>
-              <p>Datos variables como logs y cache.</p>
-            </article>
-            <article class="card">
-              <h4>/usr</h4>
-              <p>Aplicaciones y librerias compartidas.</p>
-            </article>
-            <article class="card">
-              <h4>/tmp</h4>
-              <p>Archivos temporales, se limpia con el tiempo.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="permisos" class="panel">
-          <h3>5. Permisos</h3>
-          <div class="grid two">
-            <article class="card">
-              <h4>rwx</h4>
-              <p>r: lectura, w: escritura, x: ejecucion.</p>
-              <code>chmod u+rwx archivo.sh</code>
-            </article>
-            <article class="card">
-              <h4>755 y 644</h4>
-              <p>
-                755 = propietario rwx, grupo r-x, otros r-x. 644 = propietario
-                rw-, grupo r--, otros r--.
-              </p>
-              <code>chmod 755 script.sh</code>
-            </article>
-            <article class="card">
-              <h4>chmod</h4>
-              <p>Cambia permisos de archivos.</p>
-              <code>chmod 644 archivo.txt</code>
-            </article>
-            <article class="card">
-              <h4>chown</h4>
-              <p>Cambia propietario y grupo.</p>
-              <code>chown usuario:grupo archivo.txt</code>
-            </article>
-          </div>
-        </section>
-
-        <section id="procesos" class="panel">
-          <h3>6. Procesos</h3>
-          <div class="grid four">
-            <article class="card">
-              <h4>ps</h4>
-              <p>Lista procesos activos.</p>
-              <code>ps aux</code>
-            </article>
-            <article class="card">
-              <h4>top</h4>
-              <p>Monitor en tiempo real.</p>
-              <code>top</code>
-            </article>
-            <article class="card">
-              <h4>htop</h4>
-              <p>Monitor mejorado (instalar).</p>
-              <code>htop</code>
-            </article>
-            <article class="card">
-              <h4>kill</h4>
-              <p>Finaliza procesos por PID.</p>
-              <code>kill -9 1234</code>
-            </article>
-          </div>
-        </section>
-
-        <section id="redes" class="panel">
-          <h3>7. Redes</h3>
-          <div class="grid four">
-            <article class="card">
-              <h4>ip</h4>
-              <p>Gestiona interfaces y rutas.</p>
-              <code>ip a</code>
-            </article>
-            <article class="card">
-              <h4>ping</h4>
-              <p>Prueba conectividad.</p>
-              <code>ping -c 4 8.8.8.8</code>
-            </article>
-            <article class="card">
-              <h4>curl</h4>
-              <p>Descarga y prueba APIs.</p>
-              <code>curl https://example.com</code>
-            </article>
-            <article class="card">
-              <h4>wget</h4>
-              <p>Descarga archivos.</p>
-              <code>wget https://example.com/archivo.zip</code>
-            </article>
-            <article class="card">
-              <h4>netstat</h4>
-              <p>Conexiones y puertos.</p>
-              <code>netstat -tulpn</code>
-            </article>
-          </div>
-        </section>
-
-        <section id="usuarios" class="panel">
-          <h3>8. Usuarios</h3>
-          <div class="grid four">
-            <article class="card">
-              <h4>useradd</h4>
-              <p>Crea usuarios.</p>
-              <code>sudo useradd -m dev</code>
-            </article>
-            <article class="card">
-              <h4>passwd</h4>
-              <p>Asigna contrasena.</p>
-              <code>sudo passwd dev</code>
-            </article>
-            <article class="card">
-              <h4>su</h4>
-              <p>Cambiar de usuario.</p>
-              <code>su - dev</code>
-            </article>
-            <article class="card">
-              <h4>sudo</h4>
-              <p>Eleva privilegios de forma segura.</p>
-              <code>sudo apt update</code>
-            </article>
-          </div>
-        </section>
-
-        <section id="terminal" class="panel terminal-panel">
-          <div class="panel-header">
-            <h3>Terminal simulada</h3>
-            <p>
-              Selecciona un comando o escribe uno y presiona Ejecutar para ver
-              la animacion.
-            </p>
-          </div>
-          <div class="terminal">
-            <div class="terminal-bar">
-              <span></span><span></span><span></span>
-              <p>bash - estudiante@linux</p>
-            </div>
-            <div id="terminal-output" class="terminal-output"></div>
-            <div class="terminal-input">
-              <span>$</span>
-              <input id="terminal-input" type="text" placeholder="Escribe un comando..." />
-              <button id="terminal-run">Ejecutar</button>
-            </div>
-          </div>
-        </section>
-
-        <section id="scripts" class="panel">
-          <h3>Scripts bash incluidos</h3>
-          <div class="grid two">
-            <article class="card">
-              <h4>bash/scripts.sh</h4>
-              <p>Script guiado con comandos basicos y espacios de practica.</p>
-              <code>bash bash/scripts.sh</code>
-            </article>
-            <article class="card">
-              <h4>Consejo</h4>
-              <p>Ejecuta en Linux o WSL para experimentar sin riesgo.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="docs" class="panel">
-          <h3>Documentacion</h3>
-          <p>
-            Lee la guia completa en <strong>docs/guia.md</strong> para revisar
-            objetivos, ejercicios y resultados esperados.
-          </p>
-        </section>
-      </main>
-    </div>
-  </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
